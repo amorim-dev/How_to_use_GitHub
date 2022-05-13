@@ -4,7 +4,7 @@
 
 ## How to delete files that should be in '.gitignore' but:
 
-#### **We added to the stage area, and not did the commit yet**
+- **We added to the stage area, and not did the commit yet**
 
 To delete fiels
 > git reset HEAD nombre_de_archivo
@@ -15,7 +15,7 @@ To delete folders
  (*Remember that with "git status" we can check if the files are no longer in progress. "Untracked files: …".*)
 
 
-#### **Or we already did the commit and add the file in the repository**
+- **Or we already did the commit and add the file in the repository**
 
 To delete fiels
 > git rm --cached nombre_archivo
@@ -28,7 +28,7 @@ To delete folders
 *Note that even if you delete files from your repository, they will still be in the repository history and therefore can be seen in previous commits, if someone is looking for them. This is because, when the changes were first committed, they were already indexed by Git and will be recorded in the old commits.*)
 
 
-#### **Then make sure that our files are correctly ignored.**
+- **Then make sure that our files are correctly ignored.**
 
 Commit the changes
 > git commit -am 'Deleted unwanted files'
